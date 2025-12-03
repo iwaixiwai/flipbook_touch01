@@ -17,7 +17,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowWidth*1.2);
+    createCanvas(windowWidth, windowWidth);
   ww = windowWidth;
   wh = ww;
   bar_y = wh*0.86;
