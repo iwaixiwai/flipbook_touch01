@@ -17,7 +17,10 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowWidth);
+  window.addEventListener("touchstart", function (event) { event.preventDefault(); }, { passive: false });
+  window.addEventListener("touchmove", function (event) { event.preventDefault(); }, { passive: false });
+
+  createCanvas(windowWidth, windowWidth);
   ww = windowWidth;
   wh = ww;
   bar_y = wh*0.86;
